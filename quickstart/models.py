@@ -14,10 +14,10 @@ class Salesperson(models.Model):
 
     def __str__(self):
         return self.name
-
+        
 class Sale(models.Model): 
     amount = models.IntegerField(blank=True, null=True)
     salesperson = models.ForeignKey(Salesperson, blank=True, null=True, on_delete=models.CASCADE)
 
     def __str__(self):
-         return str(self.amount) 
+         return '$'+str(self.amount) + ' SOLD BY ' + self.salesperson.name

@@ -21,6 +21,11 @@ from quickstart import views
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
+router.register(r'company', views.CompanyViewSet)
+router.register(r'sale', views.SaleViewSet)
+router.register(r'salesperson', views.SalesPersonViewSet)
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
