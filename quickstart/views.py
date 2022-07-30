@@ -32,7 +32,7 @@ class CompanyViewSet(viewsets.ModelViewSet):
     serializer_class = CompanySerializer
     permission_classes = [permissions.IsAuthenticated]
 
-class SalesPersonViewSet(viewsets.ModelViewSet):
+class SalesPersonViewSet(viewsets.ModelViewSet): 
     """
     API endpoint that allows groups to be viewed or edited.
     """
